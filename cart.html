@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>购物车 / 结算 · 农膳通</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ 顶部导航栏 ============ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="index.html">
+        <div class="brand__logo">🌿</div>
+        <div class="brand__name">农膳通</div>
+      </a>
+
+      <form class="search" onsubmit="return false;">
+        <span class="search__icon">🔍</span>
+        <input type="text" placeholder="搜索农产品，如：低卡苹果、有机蔬菜…">
+        <button class="search__btn" type="submit">搜索</button>
+      </form>
+
+      <nav class="nav-tools">
+        <a class="nav-tools__link" href="ai-assistant.html"><span class="ico">🤖</span><span>AI 助手</span></a>
+        <a class="nav-tools__link cart-badge" href="cart.html">
+          <span class="ico">🛒</span><span>购物车</span>
+          <span class="cart-badge__count">3</span>
+        </a>
+        <a class="nav-tools__link nav-tools__cta" href="login.html"><span class="ico">👤</span><span>登录 / 注册</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ 购物车主体 ============ -->
+  <div class="ai-layout">
+    <div class="container">
+      <div class="cart-layout">
+
+        <!-- ---------- 左侧：商品列表 ---------- -->
+        <div>
+          <div class="cart-list">
+            <div class="cart-list__head">
+              <h2>🛒 我的购物车</h2>
+              <span>共 3 件商品</span>
+            </div>
+
+            <!-- 商品 1 -->
+            <div class="cart-item">
+              <div class="ph cart-item__media">🍎</div>
+              <div class="cart-item__info">
+                <div class="cart-item__name">红富士苹果</div>
+                <div class="cart-item__meta">
+                  <span>📍 陕西洛川</span>
+                  <span class="kcal">🔥 52 千卡 / 100g</span>
+                  <span>规格：500g / 箱</span>
+                </div>
+                <div class="cart-item__price price"><small>¥</small>19.9 <span class="price__unit">/ 500g</span></div>
+              </div>
+              <div class="qty">
+                <button>−</button><span>2</span><button>＋</button>
+              </div>
+              <div class="cart-item__actions">
+                <div class="cart-item__subtotal">¥39.8</div>
+                <button class="cart-item__remove">🗑 删除</button>
+              </div>
+            </div>
+
+            <!-- 商品 2 -->
+            <div class="cart-item">
+              <div class="ph cart-item__media">🫐</div>
+              <div class="cart-item__info">
+                <div class="cart-item__name">有机蓝莓</div>
+                <div class="cart-item__meta">
+                  <span>📍 云南</span>
+                  <span class="kcal">🔥 57 千卡 / 100g</span>
+                  <span>规格：125g / 盒</span>
+                </div>
+                <div class="cart-item__price price"><small>¥</small>29.9 <span class="price__unit">/ 盒</span></div>
+              </div>
+              <div class="qty">
+                <button>−</button><span>1</span><button>＋</button>
+              </div>
+              <div class="cart-item__actions">
+                <div class="cart-item__subtotal">¥29.9</div>
+                <button class="cart-item__remove">🗑 删除</button>
+              </div>
+            </div>
+
+            <!-- 商品 3 -->
+            <div class="cart-item">
+              <div class="ph cart-item__media">🍚</div>
+              <div class="cart-item__info">
+                <div class="cart-item__name">东北黑米</div>
+                <div class="cart-item__meta">
+                  <span>📍 黑龙江五常</span>
+                  <span class="kcal">🔥 341 千卡 / 100g</span>
+                  <span>规格：1kg / 袋</span>
+                </div>
+                <div class="cart-item__price price"><small>¥</small>16.5 <span class="price__unit">/ 袋</span></div>
+              </div>
+              <div class="qty">
+                <button>−</button><span>1</span><button>＋</button>
+              </div>
+              <div class="cart-item__actions">
+                <div class="cart-item__subtotal">¥16.5</div>
+                <button class="cart-item__remove">🗑 删除</button>
+              </div>
+            </div>
+
+            <!-- 智能推荐区 -->
+            <div class="recommend">
+              <div class="recommend__title">✨ 猜你还喜欢 · 智能推荐</div>
+              <div class="recommend__grid">
+                <div class="rec-card">
+                  <div class="ph rec-card__media">🍅</div>
+                  <div>
+                    <div class="rec-card__name">有机西红柿</div>
+                    <div class="rec-card__price">¥9.9</div>
+                  </div>
+                  <button class="rec-card__add">＋</button>
+                </div>
+                <div class="rec-card">
+                  <div class="ph rec-card__media">🥦</div>
+                  <div>
+                    <div class="rec-card__name">有机西兰花</div>
+                    <div class="rec-card__price">¥12.8</div>
+                  </div>
+                  <button class="rec-card__add">＋</button>
+                </div>
+                <div class="rec-card">
+                  <div class="ph rec-card__media">🫘</div>
+                  <div>
+                    <div class="rec-card__name">新疆红枣</div>
+                    <div class="rec-card__price">¥21.5</div>
+                  </div>
+                  <button class="rec-card__add">＋</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- 右侧：订单摘要 ---------- -->
+        <aside class="summary">
+          <div class="summary__card">
+            <h3 class="summary__title">订单摘要</h3>
+
+            <div class="summary__row"><span>商品金额</span><span>¥86.2</span></div>
+            <div class="summary__row"><span>配送费</span><span>¥0.00</span></div>
+            <div class="summary__row"><span>已享优惠</span><span style="color:var(--green-600)">−¥0.00</span></div>
+
+            <div class="summary__row summary__row--total">
+              <span class="label">应付总额</span>
+              <span class="value">¥86.2</span>
+            </div>
+
+            <div class="promo">
+              <input class="input" type="text" placeholder="输入优惠码">
+              <button class="btn btn--ghost">使用</button>
+            </div>
+
+            <button class="btn btn--primary btn--block btn--lg">立即结算</button>
+
+            <div class="trust-row mt-16">
+              <div><span class="ico">🛡</span>正品保障</div>
+              <div><span class="ico">🚚</span>次日达</div>
+              <div><span class="ico">↩</span>无忧退换</div>
+            </div>
+          </div>
+
+          <!-- 健康提示框 -->
+          <div class="health-tip">
+            <div class="health-tip__head">💚 健康小提示</div>
+            您的购物车商品总热量约 <b>455 千卡</b>。建议搭配适量运动，保持健康生活方式，
+            让每一餐都吃得新鲜、有机、科学。
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

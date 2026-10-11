@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录 / 注册 · 农膳通</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="auth">
+    <!-- ============ 左侧品牌宣传区 ============ -->
+    <aside class="auth__aside">
+      <div class="auth__aside-inner">
+        <a class="brand" href="index.html">
+          <div class="brand__logo">🌿</div>
+          <div class="brand__name" style="color:#fff">农膳通</div>
+        </a>
+
+        <h1 class="auth__aside-title">您的健康<br>饮食管家</h1>
+        <p class="auth__aside-sub">新鲜有机的农产品直供，搭配 AI 智能营养服务，让健康饮食变得简单。</p>
+
+        <div class="auth__features">
+          <div class="auth__feature">
+            <div class="ico">🌱</div>
+            <div>
+              <b>新鲜有机</b>
+              <p>产地直供，品质保证</p>
+            </div>
+          </div>
+          <div class="auth__feature">
+            <div class="ico">🤖</div>
+            <div>
+              <b>AI 健康助手</b>
+              <p>智能定制饮食方案</p>
+            </div>
+          </div>
+          <div class="auth__feature">
+            <div class="ico">📊</div>
+            <div>
+              <b>健康管理</b>
+              <p>记录追踪，科学饮食</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ============ 右侧登录交互区 ============ -->
+    <main class="auth__main">
+      <div class="auth__box">
+        <a class="auth__back" href="index.html">← 返回首页</a>
+
+        <!-- 用于纯 CSS 切换的隐藏 radio -->
+        <input type="radio" name="authtab" id="tab-login" class="tab-radio" checked>
+        <input type="radio" name="authtab" id="tab-register" class="tab-radio">
+
+        <div class="auth__tabs">
+          <label class="auth__tab" for="tab-login">登录</label>
+          <label class="auth__tab" for="tab-register">注册</label>
+        </div>
+
+        <!-- 登录表单 -->
+        <div class="auth-form auth-form--login">
+          <h2 class="auth__title">欢迎回来 👋</h2>
+          <p class="auth__hint">登录后即可查看您的健康档案与专属方案</p>
+
+          <div class="field field--icon">
+            <span class="ico">📱</span>
+            <input class="input" type="text" placeholder="手机号 / 邮箱">
+          </div>
+          <div class="field field--icon">
+            <span class="ico">🔒</span>
+            <input class="input" type="password" placeholder="密码">
+          </div>
+
+          <div class="form-row">
+            <label class="checkbox"><input type="checkbox" checked> 记住我</label>
+            <a class="link" href="#">忘记密码？</a>
+          </div>
+
+          <button class="btn btn--primary btn--block btn--lg">登 录</button>
+
+          <div class="divider">其他登录方式</div>
+          <div class="oauth">
+            <button class="oauth__btn"><span>💬</span> 微信登录</button>
+            <button class="oauth__btn"><span>💙</span> 支付宝登录</button>
+          </div>
+        </div>
+
+        <!-- 注册表单 -->
+        <div class="auth-form auth-form--register">
+          <h2 class="auth__title">创建账号 🌱</h2>
+          <p class="auth__hint">注册即可享用 AI 定制饮食方案</p>
+
+          <div class="field field--icon">
+            <span class="ico">📱</span>
+            <input class="input" type="text" placeholder="手机号 / 邮箱">
+          </div>
+          <div class="field field--icon">
+            <span class="ico">🔑</span>
+            <input class="input" type="password" placeholder="设置密码">
+          </div>
+          <div class="field field--icon">
+            <span class="ico">✅</span>
+            <input class="input" type="password" placeholder="确认密码">
+          </div>
+
+          <div class="form-row">
+            <label class="checkbox"><input type="checkbox"> 我已阅读并同意《用户协议》《隐私政策》</label>
+          </div>
+
+          <button class="btn btn--primary btn--block btn--lg">注 册</button>
+
+          <div class="divider">其他注册方式</div>
+          <div class="oauth">
+            <button class="oauth__btn"><span>💬</span> 微信注册</button>
+            <button class="oauth__btn"><span>💙</span> 支付宝注册</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

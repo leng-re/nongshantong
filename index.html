@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>农膳通 · 农产品健康电商平台</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ 顶部导航栏 ============ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="index.html">
+        <div class="brand__logo">🌿</div>
+        <div class="brand__name">农膳通</div>
+      </a>
+
+      <form class="search" onsubmit="return false;">
+        <span class="search__icon">🔍</span>
+        <input type="text" placeholder="搜索农产品，如：低卡苹果、有机蔬菜…">
+        <button class="search__btn" type="submit">搜索</button>
+      </form>
+
+      <nav class="nav-tools">
+        <a class="nav-tools__link" href="ai-assistant.html"><span class="ico">🤖</span><span>AI 助手</span></a>
+        <a class="nav-tools__link cart-badge" href="cart.html">
+          <span class="ico">🛒</span><span>购物车</span>
+          <span class="cart-badge__count">3</span>
+        </a>
+        <a class="nav-tools__link nav-tools__cta" href="login.html"><span class="ico">👤</span><span>登录 / 注册</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ 主视觉 Hero ============ -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__body">
+        <span class="hero__eyebrow">🥗 有机品质 · AI 健康服务</span>
+        <h1 class="hero__title">低卡水果专区<br><em>美味不长胖</em></h1>
+        <p class="hero__slogan">产地直供 · 每日新鲜 · 科学配比</p>
+        <p class="hero__desc">
+          以健康饮食为核心的农产品垂直电商平台，汇聚有机蔬菜、当季水果与优质粗粮，
+          搭配 AI 营养师，为你定制专属的健康饮食方案。
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--orange btn--lg" href="#hot">立即选购 →</a>
+          <a class="btn btn--outline-light btn--lg" href="ai-assistant.html">体验 AI 助手</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat"><b>3000+</b><span>合作产地直供</span></div>
+          <div class="hero__stat"><b>100%</b><span>有机可溯源</span></div>
+          <div class="hero__stat"><b>24h</b><span>新鲜直达</span></div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__card">🍎</div>
+        <div class="hero__float hero__float--a"><span>🔥</span> 52 千卡 / 100g</div>
+        <div class="hero__float hero__float--b"><span>🌿</span> 陕西洛川 · 有机认证</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 商品分类区 ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Category</span>
+        <h2 class="section-head__title">精选商品分类</h2>
+        <p class="section-head__desc">从源头到餐桌，每一类都严格筛选</p>
+      </div>
+
+      <div class="cat-grid">
+        <div class="cat-card">
+          <div class="cat-card__ico">🥬</div>
+          <div class="cat-card__name">有机蔬菜</div>
+          <div class="cat-card__desc">无农药有机种植</div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__ico">🍑</div>
+          <div class="cat-card__name">当季水果</div>
+          <div class="cat-card__desc">应季新鲜采摘</div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__ico">🌾</div>
+          <div class="cat-card__name">粗粮杂粮</div>
+          <div class="cat-card__desc">健康养生首选</div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__ico">🚚</div>
+          <div class="cat-card__name">产地直供</div>
+          <div class="cat-card__desc">源头新鲜直达</div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-card__ico">🥗</div>
+          <div class="cat-card__name">低卡推荐</div>
+          <div class="cat-card__desc">健身减脂必备</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AI 健康饮食助手横幅 ============ -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="ai-banner">
+        <div class="ai-banner__body">
+          <span class="ai-banner__badge">✨ 平台特色功能</span>
+          <h2 class="ai-banner__title">AI 健康饮食助手</h2>
+          <p class="ai-banner__desc">输入您的身体数据，AI 为您定制专属健康饮食方案；还能识别食材营养、随时对话咨询。</p>
+        </div>
+        <div class="ai-banner__actions">
+          <a class="btn btn--orange btn--lg" href="ai-assistant.html">立即体验 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 热门推荐 ============ -->
+  <section class="section section--gray" id="hot">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Popular</span>
+        <h2 class="section-head__title">热门推荐</h2>
+        <p class="section-head__desc">大家都在买的健康好物</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- 商品 1 -->
+        <article class="card product-card">
+          <div class="ph product-card__media">🍎
+            <div class="product-card__tags">
+              <span class="tag tag--organic">有机</span>
+              <span class="tag tag--lowcal">低卡</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">红富士苹果</h3>
+            <p class="product-card__origin">📍 陕西洛川 · 52千卡/100g</p>
+            <div class="product-card__foot">
+              <div class="price"><small>¥</small>19.9 <span class="price__unit">/ 500g</span></div>
+              <button class="btn btn--primary btn--sm">＋ 加购</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 商品 2 -->
+        <article class="card product-card">
+          <div class="ph product-card__media">🫐
+            <div class="product-card__tags">
+              <span class="tag tag--organic">有机</span>
+              <span class="tag tag--lowcal">低卡</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">有机蓝莓</h3>
+            <p class="product-card__origin">📍 云南 · 57千卡/100g</p>
+            <div class="product-card__foot">
+              <div class="price"><small>¥</small>29.9 <span class="price__unit">/ 125g</span></div>
+              <button class="btn btn--primary btn--sm">＋ 加购</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 商品 3 -->
+        <article class="card product-card">
+          <div class="ph product-card__media">🥦
+            <div class="product-card__tags">
+              <span class="tag tag--organic">有机</span>
+              <span class="tag tag--season">当季</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">有机西兰花</h3>
+            <p class="product-card__origin">📍 山东寿光 · 34千卡/100g</p>
+            <div class="product-card__foot">
+              <div class="price"><small>¥</small>12.8 <span class="price__unit">/ 500g</span></div>
+              <button class="btn btn--primary btn--sm">＋ 加购</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 商品 4 -->
+        <article class="card product-card">
+          <div class="ph product-card__media">🍚
+            <div class="product-card__tags">
+              <span class="tag tag--origin">直供</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">东北黑米</h3>
+            <p class="product-card__origin">📍 黑龙江五常 · 341千卡/100g</p>
+            <div class="product-card__foot">
+              <div class="price"><small>¥</small>16.5 <span class="price__unit">/ 1kg</span></div>
+              <button class="btn btn--primary btn--sm">＋ 加购</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 产地溯源 ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Traceability</span>
+        <h2 class="section-head__title">产地溯源 · 从源头放心</h2>
+        <p class="section-head__desc">每一份食材，都能追溯到它的原产地</p>
+      </div>
+
+      <div class="origin-grid">
+        <article class="card origin-card">
+          <div class="ph origin-card__media">🌱</div>
+          <div class="origin-card__body">
+            <div class="origin-card__place">📍 山东寿光</div>
+            <p class="origin-card__desc">中国蔬菜之乡，有机蔬菜直供，标准化大棚种植，全程可追溯。</p>
+            <div class="origin-card__tags">
+              <span class="tag tag--organic">有机种植</span>
+              <span class="tag tag--season">当季直供</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card origin-card">
+          <div class="ph origin-card__media">🍎</div>
+          <div class="origin-card__body">
+            <div class="origin-card__place">📍 陕西洛川</div>
+            <p class="origin-card__desc">苹果优生区，红富士原产地，昼夜温差大，糖度更高、果香更浓。</p>
+            <div class="origin-card__tags">
+              <span class="tag tag--organic">产地直供</span>
+              <span class="tag tag--lowcal">低卡推荐</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card origin-card">
+          <div class="ph origin-card__media">⛰️</div>
+          <div class="origin-card__body">
+            <div class="origin-card__place">📍 云南高原</div>
+            <p class="origin-card__desc">高海拔种植，生态无污染，日照充足，果实饱满风味足。</p>
+            <div class="origin-card__tags">
+              <span class="tag tag--organic">生态无污染</span>
+              <span class="tag tag--season">高原种植</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 用户评价 ============ -->
+  <section class="section section--green">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__eyebrow">Reviews</span>
+        <h2 class="section-head__title">真实用户评价</h2>
+        <p class="section-head__desc">每一份信任，都来自真实体验</p>
+      </div>
+
+      <div class="review-grid">
+        <article class="card review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-card__quote">“苹果特别新鲜，水分足，热量标注得很清楚，减脂期吃完全没负担。AI 推荐的水果酸奶食谱太实用了！”</p>
+          <div class="review-card__user">
+            <div class="avatar">林</div>
+            <div>
+              <div class="review-card__name">林女士</div>
+              <div class="review-card__date">2026-09-28</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-card__quote">“下单第二天就到了，配送很快。产地溯源能看到具体农场，买得放心，有机蔬菜口感的确不一样。”</p>
+          <div class="review-card__user">
+            <div class="avatar">张</div>
+            <div>
+              <div class="review-card__name">张先生</div>
+              <div class="review-card__date">2026-09-30</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-card__quote">“品质很稳定，回购好几次了。AI 营养师帮我搭配的饮食方案很科学，配合运动，一个月瘦了三斤。”</p>
+          <div class="review-card__user">
+            <div class="avatar">王</div>
+            <div>
+              <div class="review-card__name">王小姐</div>
+              <div class="review-card__date">2026-10-03</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="brand">
+            <div class="brand__logo">🌿</div>
+            <div class="brand__name">农膳通</div>
+          </div>
+          <p class="footer__intro">以健康饮食为核心的农产品垂直电商平台，产地直供 + AI 营养助手，让每一餐都新鲜、有机、科学。</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>产品服务</h4>
+          <a href="#">有机蔬菜</a>
+          <a href="#">当季水果</a>
+          <a href="#">粗粮杂粮</a>
+          <a href="#">产地直供</a>
+        </div>
+        <div class="footer__col">
+          <h4>健康服务</h4>
+          <a href="ai-assistant.html">AI 饮食方案</a>
+          <a href="ai-assistant.html">营养查询</a>
+          <a href="ai-assistant.html">AI 营养师对话</a>
+        </div>
+        <div class="footer__col">
+          <h4>关于我们</h4>
+          <a href="#">品牌故事</a>
+          <a href="#">产地溯源</a>
+          <a href="#">加入我们</a>
+        </div>
+        <div class="footer__col">
+          <h4>帮助中心</h4>
+          <a href="#">配送说明</a>
+          <a href="#">售后政策</a>
+          <a href="#">联系我们</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 农膳通 NongShanTong · 农产品健康电商平台 · All Rights Reserved</span>
+        <div class="footer__social">
+          <span>💬</span><span>📱</span><span>📮</span><span>🌐</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

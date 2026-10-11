@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 健康助手 · 农膳通</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ 顶部导航栏 ============ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="index.html">
+        <div class="brand__logo">🌿</div>
+        <div class="brand__name">农膳通</div>
+      </a>
+
+      <form class="search" onsubmit="return false;">
+        <span class="search__icon">🔍</span>
+        <input type="text" placeholder="搜索农产品，如：低卡苹果、有机蔬菜…">
+        <button class="search__btn" type="submit">搜索</button>
+      </form>
+
+      <nav class="nav-tools">
+        <a class="nav-tools__link" href="ai-assistant.html"><span class="ico">🤖</span><span>AI 助手</span></a>
+        <a class="nav-tools__link cart-badge" href="cart.html">
+          <span class="ico">🛒</span><span>购物车</span>
+          <span class="cart-badge__count">3</span>
+        </a>
+        <a class="nav-tools__link nav-tools__cta" href="login.html"><span class="ico">👤</span><span>登录 / 注册</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ AI 助手主体 ============ -->
+  <div class="ai-layout">
+    <div class="container">
+      <div class="ai-shell">
+
+        <!-- 侧边栏（三个子页面共用） -->
+        <aside class="ai-side">
+          <div class="ai-side__head">
+            <b>🤖 AI 健康助手</b>
+            <p>你的专属营养管家</p>
+          </div>
+          <nav class="ai-menu">
+            <a href="#plan" class="is-active"><span class="ico">🥗</span> 饮食方案</a>
+            <a href="#nutrition"><span class="ico">🔍</span> 营养查询</a>
+            <a href="#chat"><span class="ico">💬</span> AI 对话</a>
+          </nav>
+        </aside>
+
+        <!-- 内容区 -->
+        <main class="ai-main">
+
+          <!-- ---------- 子页面 1：健康饮食方案 ---------- -->
+          <section class="panel" id="plan">
+            <div class="panel__head">
+              <h2>🥗 健康饮食方案</h2>
+              <p>输入您的身体数据，AI 为您定制专属健康饮食方案</p>
+            </div>
+            <div class="panel__body">
+              <!-- 基本信息 -->
+              <h3 class="field__label">基本信息</h3>
+              <div class="grid-form">
+                <div class="field">
+                  <label class="field__label">性别 <span>*</span></label>
+                  <select class="select">
+                    <option>女</option>
+                    <option>男</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="field__label">年龄 <span>*</span></label>
+                  <input class="input" type="number" placeholder="请输入年龄">
+                </div>
+                <div class="field">
+                  <label class="field__label">身高（cm） <span>*</span></label>
+                  <input class="input" type="number" placeholder="请输入身高">
+                </div>
+                <div class="field">
+                  <label class="field__label">当前体重（kg） <span>*</span></label>
+                  <input class="input" type="number" placeholder="请输入当前体重">
+                </div>
+                <div class="field">
+                  <label class="field__label">目标体重（kg） <span>*</span></label>
+                  <input class="input" type="number" placeholder="请输入目标体重">
+                </div>
+                <div class="field">
+                  <label class="field__label">活动量</label>
+                  <select class="select">
+                    <option>久坐少动</option>
+                    <option>轻度活动</option>
+                    <option>中度活动</option>
+                    <option>高强度活动</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- 饮食偏好 -->
+              <h3 class="field__label mt-24">饮食偏好</h3>
+              <div class="chip-group">
+                <span class="chip">素食</span>
+                <span class="chip is-active">低碳水</span>
+                <span class="chip">高蛋白</span>
+                <span class="chip">清淡</span>
+                <span class="chip">海鲜</span>
+                <span class="chip">无麸质</span>
+              </div>
+
+              <!-- 饮食目标 -->
+              <h3 class="field__label mt-32">饮食目标</h3>
+              <div class="goal-grid">
+                <div class="goal is-active">
+                  <div class="goal__ico">🔥</div>
+                  <div class="goal__name">减脂瘦身</div>
+                  <div class="goal__sub">控制热量缺口</div>
+                </div>
+                <div class="goal">
+                  <div class="goal__ico">💚</div>
+                  <div class="goal__name">保持健康</div>
+                  <div class="goal__sub">均衡营养摄入</div>
+                </div>
+                <div class="goal">
+                  <div class="goal__ico">💪</div>
+                  <div class="goal__name">增肌增重</div>
+                  <div class="goal__sub">高蛋白配比</div>
+                </div>
+                <div class="goal">
+                  <div class="goal__ico">🍵</div>
+                  <div class="goal__name">调理养生</div>
+                  <div class="goal__sub">温和食补方案</div>
+                </div>
+              </div>
+
+              <button class="btn btn--primary btn--lg mt-32">✨ 生成饮食方案</button>
+            </div>
+          </section>
+
+          <!-- ---------- 子页面 2：食材营养查询 ---------- -->
+          <section class="panel" id="nutrition">
+            <div class="panel__head">
+              <h2>🔍 食材营养查询</h2>
+              <p>上传图片识别食材，获取详细营养信息</p>
+            </div>
+            <div class="panel__body">
+              <div class="dropzone">
+                <div class="dropzone__ico">📤</div>
+                <b>点击或拖拽图片到此处上传</b>
+                <p>支持 JPG / PNG 格式，AI 将自动识别食材并返回营养数据</p>
+              </div>
+
+              <h3 class="field__label mt-32">快速查询</h3>
+              <div class="chip-group">
+                <span class="chip">🍎 苹果</span>
+                <span class="chip">🥦 西兰花</span>
+                <span class="chip">🌾 燕麦</span>
+                <span class="chip">🍗 鸡胸肉</span>
+                <span class="chip">🍌 香蕉</span>
+                <span class="chip">🥕 胡萝卜</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- ---------- 子页面 3：AI 营养师对话 ---------- -->
+          <section class="panel" id="chat">
+            <div class="panel__head">
+              <h2>💬 AI 营养师对话</h2>
+              <p>与 AI 营养师交流，获取专业饮食建议</p>
+            </div>
+
+            <div class="chat">
+              <div class="chat__body">
+                <div class="msg">
+                  <div class="msg__avatar">🤖</div>
+                  <div class="msg__bubble">你好呀！我是你的 AI 营养师 👋 有任何关于饮食、营养、热量的问题，都可以问我～</div>
+                </div>
+                <div class="msg msg--me">
+                  <div class="msg__avatar">🙂</div>
+                  <div class="msg__bubble">我想健康减脂，早餐吃什么比较好？</div>
+                </div>
+                <div class="msg">
+                  <div class="msg__avatar">🤖</div>
+                  <div class="msg__bubble">推荐「燕麦 + 无糖酸奶 + 蓝莓」组合：燕麦提供慢吸收碳水，蓝莓低卡且富含花青素，总热量约 250 千卡，饱腹感强又不易饿。需要我把这份早餐加入你的饮食方案吗？</div>
+                </div>
+              </div>
+
+              <div class="chat__foot">
+                <div class="chat__input-row">
+                  <input class="input" type="text" placeholder="输入你的问题…">
+                  <button class="btn btn--primary">发送</button>
+                </div>
+                <div class="chip-group mt-16">
+                  <span class="chip">如何健康减脂？</span>
+                  <span class="chip">早餐吃什么好？</span>
+                  <span class="chip">推荐低卡食物？</span>
+                  <span class="chip">如何控制热量？</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
